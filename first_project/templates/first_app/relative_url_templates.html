@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Django Level 4</title>
+        <link rel="stylesheet" href="{%  static 'css/mystyle.css' %}"/>
+    </head>
+</html>
+<body>
+    <h1>Welcome to relative url templates</h1>
+    <a href="{% url 'first_app:other' %}">The other page</a>
+    <a href="{% url 'admin:index' %}">admin</a>
+</body>
